@@ -1169,16 +1169,13 @@ width: 100%;
 height: auto;
 }
 .icone-niveau {
-background: url(../imgs/icone-niveau.png) no-repeat;
-background-position-y: 5px;
+background: url(../imgs/icone-niveau.png) 0 4px no-repeat;
 }
 .icone-matiere {
-background: url(../imgs/icone-matiere.png) no-repeat;
-background-position-y: 5px;
+background: url(../imgs/icone-matiere.png) 0 4px no-repeat;
 }
 .icone-ville {
-background: url(../imgs/icone-ville.png) no-repeat;
-background-position-y: 1px;
+background: url(../imgs/icone-ville.png) 0 0 no-repeat;
 }
 .icone-coeur {
 background: url(../imgs/like.png) 0 3px no-repeat;
@@ -2236,7 +2233,7 @@ color:#38AD9F;
 }
 #login {
 display: none;
-right: 380px;
+right: 394px;
 top: 41px;
 height: 300px;
 width: 300px;
@@ -2574,7 +2571,7 @@ z-index: 100;
 	}
 	.menuDeroulant li, input[type="submit"] {
 	margin-left: 0px;
-	width: 99%;
+	width: 100%;
 	}
 	.champ-recherche input, textarea {
 	margin-left: 0px;

@@ -98,7 +98,7 @@
                         <p>iWanteacher se tient à votre service.</p>
                      </div>
                      <div class="container clearfix">
-                        <form id="form_contact2" action="contact.php#form_contact2" method="post">
+                        <form id="form_contact2" action="contact.php#content-contact" method="post">
                            <?php
                               include("include/form.contact.runtime.php");
                               include("include/error.display.php");

@@ -330,7 +330,7 @@
                <div class="contact-profil">
                <div class="container clearfix">
                <h3>Prendre contact</h3>
-               <form id="form_contact" action="#form_contact" method="post">
+               <form id="form_contact" action="profil.php?id=<?php echo $id ?>#form_contact" method="post">
                <?php
                   include("include/form.profil.runtime.php");
                   include("include/error.display.php"); 
