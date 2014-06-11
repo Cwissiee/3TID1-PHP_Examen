@@ -1,9 +1,9 @@
    <?php 
    // Si en allant sur la page inscription, aucune étape n'est en cours de réalisation, alors on arrive à l'étape 1 par défaut
-   if (empty($_SESSION['inscription']['etape'])) {$_SESSION['inscription']['etape'] = 3;}
+   if (empty($_SESSION['inscription']['etape'])) {$_SESSION['inscription']['etape'] = 1;}
       // Si la variable session inscription statut existe, alors on récupère les données en rapport avec le statut
    if (isset($_SESSION['inscription']['statut'])) {$statut = $_SESSION['inscription']['statut'];}
-      $statut = 'Professeur'; //pour avoir tout le contenu pour coder plus facilement sans devoir à chaque fois tout remplir
+     // $statut = 'Professeur'; pour avoir tout le contenu pour coder plus facilement sans devoir à chaque fois tout remplir
       
       // Si on annule, l'inscription est alors remise à neuf (vidée) et on retombe sur index
       if (isset($_GET['annule']) && $_GET['annule'] == 'ok') {

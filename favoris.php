@@ -34,7 +34,6 @@
                <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
                <link rel="stylesheet" type="text/css" href="css/reset.css"/>
                <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-               <link rel="stylesheet" type="text/css" href="css/hugrid.css" />
                <link rel="icon" type="image/png" href="imgs/favicon.ico" />
                <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'/>
                <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300' rel='stylesheet' type='text/css'>
@@ -80,7 +79,7 @@
                <!-- Champs de recherche -->
                <section id="recherche-favoris">
                   <div class="container clearfix">
-                     <form action="#recherche" method="post">
+                     <form action="recherche.php" method="post">
                         <div class="champ-recherche">
                            <div class="chp-ville">
                               <input type="text" id="citySearch" placeholder="Ville ou Code postal"/>
@@ -266,7 +265,6 @@
                   </div>
                   <!-- End container -->
                </footer>
-               <script type="text/javascript" src="js/hugrid.js"></script>
                <script type="text/javascript" src="js/script-1.js"></script>
                <script type="text/javascript" src="js/champ-geolocalisation.js"></script>
             </body>

@@ -27,7 +27,6 @@
                <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
                <link rel="stylesheet" type="text/css" href="css/reset.css"/>
                <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-               <link rel="stylesheet" type="text/css" href="css/hugrid.css" />
                <link rel="icon" type="image/png" href="imgs/favicon.ico" />
                <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'/>
                <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300' rel='stylesheet' type='text/css'>
@@ -480,8 +479,9 @@
                            <label for="deplacement-oui">Oui</label>
                            <input type="radio" id="deplacement-non" name="deplacement" value="Non" checked>
                            <label for="deplacement-non">Non</label>
-                           <input type="text" id="deplacement" <?php if (isset($erreurs['dp_km'])) {echo 'style="color: #e74c3c; border-color: #e74c3c"';} ?> name="dp_km" id="dp_km" placeholder="<?php if (isset($erreurs['dp_km'])) {echo $erreurs['dp_km'];} else {echo "10 Km";} ?>" value="<?php if (isset($dp_km)) {echo $dp_km;} ?>"> <!-- erreur spécifiée dans le placeholder et border de l'input -->
+                           <input type="text" <?php if (isset($erreurs['dp_km'])) {echo 'style="color: #e74c3c; border-color: #e74c3c"';} ?> name="dp_km" id="dp_km" placeholder="<?php if (isset($erreurs['dp_km'])) {echo $erreurs['dp_km'];} else {echo "10 Km";} ?>" value="<?php if (isset($dp_km)) {echo $dp_km;} ?>"> <!-- erreur spécifiée dans le placeholder et border de l'input -->
                         </div>
+
                         <?php    
                            if ($statut == 'Professeur') {
                               ?> <!-- On affiche ce qui suit uniquement si on a le statut professeur -->
@@ -505,7 +505,7 @@
                         <?php    
                            } 
                            ?> 
-                        <input type="submit" value="Suivant">
+                        <input type="submit" value="Suivant" <?php if ($statut != 'Professeur' && $_SESSION['inscription']['etape'] == 3) {echo "class='notProf'";} ?>>
                      </form>
                      <form id="form-annulation" action="?annule=ok" method="POST">
                         <input type="submit" value="Annuler">
@@ -567,7 +567,6 @@
                   <!-- End container -->
                </footer>
                <script type="text/javascript" src="js/champ-geolocalisation.js"></script>
-               <script type="text/javascript" src="js/hugrid.js"></script>
                <script type="text/javascript" src="js/script-1.js"></script>
             </body>
          </html>
